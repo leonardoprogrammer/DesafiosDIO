@@ -39,9 +39,9 @@ public class MacPRONALTS {
         int produtos = 0, quantidade = 0;
         double res = 0, valor = 0;
 
-        int N = Integer.parseInt(sc.nextLine());
+        int n = Integer.parseInt(sc.nextLine());
 
-        for (int x = 0; x < N; x++) {
+        for (int x = 0; x < n; x++) {
             produtos = sc.nextInt();
             quantidade = sc.nextInt();
 
