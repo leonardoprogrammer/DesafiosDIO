@@ -48,14 +48,14 @@ public class Dama {
             y2 = sc.nextInt();
 
             if (x1 == 0 && y1 == 0 && x2 == 0 && y2 == 0)
-                break; //condição de parada
+                break; // condição de parada
 
-            if ()
+            if (x1 == x2 && y1 == y2)
                 System.out.println("0");
-            else if ()
-                System.out.println();
-            else if ()
-                System.out.println();
+            else if (x1 == x2 || y1 == y2)
+                System.out.println("1");
+            else if ((Math.abs((x1 - x2)) == (Math.abs((y1 - y2)))))
+                System.out.println("1");
             else
                 System.out.println("2");
         }
