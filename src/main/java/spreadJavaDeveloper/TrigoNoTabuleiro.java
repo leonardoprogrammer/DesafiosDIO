@@ -23,6 +23,7 @@ Para cada caso de teste, imprima a quantidade de kgs de trigo que o monge espera
 
  */
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class TrigoNoTabuleiro {
@@ -32,24 +33,12 @@ public class TrigoNoTabuleiro {
 
         int n = sc.nextInt();
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             int x = sc.nextInt();
-
-            for (int j = 0; j < x; j++) {
-                int graos = 0;
-                int gramas;
-                Double kg;
-
-                if (j == 0)
-                    graos = 1;
-                else
-                    graos = graos * 2;
-
-                gramas = graos / 12;
-                kg = gramas * 0.001;
-                //int kgInt = ;
-            }
-            System.out.println();   //Complete o código aqui.
+            BigInteger graos = BigInteger.valueOf(2);
+            graos = graos.pow(x);
+            BigInteger kilos = graos.divide(BigInteger.valueOf(12000));
+            System.out.println(kilos + " kg");
         }
         sc.close();
     }
